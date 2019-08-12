@@ -17,5 +17,20 @@ public class CoreFeatures {
 
         public void square() { display.setCurrentNumber(Math.pow(display.getCurrentNumber(), 2)); }
 
+        public void squareRoot() {display.setCurrentNumber(Math.sqrt(display.getCurrentNumber()));}
+
+        public void exponentation(double a) {display.setCurrentNumber(Math.pow(display.getCurrentNumber());}
+
+        public void invertSign(){
+            if (display.getCurrentNumber()> 0){
+                display.setCurrentNumber(- display.getCurrentNumber());
+            }
+            else if (display.getCurrentNumber()<0){
+                display.setCurrentNumber(display.getCurrentNumber() *-1);
+            }
+            else{
+                display.setCurrentNumber(0);
+            }
+        }
     }
 }
